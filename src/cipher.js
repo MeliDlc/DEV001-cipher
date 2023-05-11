@@ -1,4 +1,5 @@
 window.cipher = {
+  //Codificar
   encode: (text, shifts) => {
     let cipEncode = ""; // Aquí se almacenan las letras reemplazadas, va a ser el nuevo mensaje.
     for (let i = 0; i < text.length; i++) {
@@ -21,8 +22,9 @@ window.cipher = {
     return cipEncode; // Retorna el nuevo mensaje codificado.
   },
 
+  //Decodificar
   decode: (text, shifts) => {
-    /* Acá va tu código */
+
     let cipDecode = ""; // Aquí se almacenan las letras reemplazadas, va a ser el nuevo mensaje.
     for (let i = 0; i < text.length; i++) {
       // La función va recorriendo cada letra del string hasta llegar a la última.
@@ -31,7 +33,7 @@ window.cipher = {
         // Aquí se indica el caso de una letra.
         cipDecode += String.fromCharCode(
           ((txt + 65 - parseInt(shifts)) % 26) + 65
-        ); // Aquí se aplica la fórmula para obtener el nuevo número, y traducir la letra del mensaje. Por el momento sólo puedo traducir con mayúsculas porque las minúsculas me están dando problemas.
+        ); // Aquí se aplica la fórmula para obtener el nuevo número, y traducir la letra del mensaje.
       } else if (97 <= txt && txt <= 122) {
         // En éste caso son las minúsculas.
         cipDecode += String.fromCharCode(
