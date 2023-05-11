@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--Sección principal de la página-->
+  <div class="container-fluid">
+    <div class="row justify-content-center topMargin">
+      <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
+        <h1 class="titulo">Cifrado César</h1>
+        <hr> <!--crea la linea-->
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+   
+    <div class="row justify-content-center">
+      <img src="img/cesar ci.png" width="330px" height="410px"> <!--se implementa la imagen junto con las medidas-->
+      <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12">
+        
+        <h5 class="instr">1. Ingresa el número de desplazamientos.</h5>
+        <!-- Botón para adicionar el número de shifts -->
+        <p class="desplazamientos mb-0">Número de desplazamientos</p>
+        <input class="my-2 shift" type="number" min="0" pattern="^[0-9]+" id="shiftNumber">
+        <h5 class="instr">2. Escriba su mensaje.</h5>
+        <!-- Área de introducción del texto -->
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <textarea class="first" id="sourceText" placeholder="Escriba el texto a cifrar o descifrar."></textarea>
+          </div>
+        </div>
+        <h5 class="instr mt-2 mb-0">3. Haz click.</h5>
+        <!-- Botones de cifrar y descifrar -->
+        <div class="row justify-content-center">
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5 col-5 text-center">
+            <button type="button" class="btn p-2 mt-3 mb-3" id="btnC">Cifrar</button>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5 col-5 text-center">
+            <button type="button" class="btn p-2 mt-3 mb-3" id="btnT">Descifrar</button>
+          </div>
+        </div>
+        <h5 class="instr">4. ¡Y listo!</h5>
+        <!-- Aquí entra el texto traducido -->
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <textarea class="last" id="finalTxt" disabled></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- enlaces a los JS -->
+  <div id="root"></div>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+
+  
+</body>
+</html>

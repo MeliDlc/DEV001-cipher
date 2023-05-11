@@ -1,0 +1,38 @@
+body {
+  background: linear-gradient(#6978ff, #0bceff);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-family: "lucida console";
+  text-align: center;
+  color: white;
+}
+
+.topMargin {
+  margin-top: 2rem;
+}
+
+.defi {
+  font-family: "courier new";
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  width: 80%;
+  border-radius: 12px;
+  background-color: #3616ee;
+  font-family: "K2D", sans-serif;
+  color: white;
+  text-align: center;
+}

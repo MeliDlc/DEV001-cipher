@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(#6978ff, #0bceff);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titulo {
+    font-family: "lucida console";
+    text-align: center;
+    color: white;
+  }
+  
+  .topMargin {
+    margin-top: 2rem;
+  }
+  
+  .instr {
+    font-family: "courier new";
+    text-align: center;
+    color: white;
+  }
+  
+  .desplazamientos {
+    font-family: "K2D", sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  .shift {
+    width: 4rem;
+    border-radius: 5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .first {
+    resize: none;
+    border: 1px grey;
+    background-color: white;
+    height: 9rem;
+    width: 100%;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  
+  .last {
+    resize: none;
+    border: 1px grey;
+    background-color: white;
+    height: 9rem;
+    width: 100%;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 6rem;
+  }
+  
+  .instr {
+    text-align: center;
+  }
+  
+  .btn {
+    width: 80%;
+    border-radius: 12px;
+    background-color: #3616ee;
+    font-family: "K2D", sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  @media (min-width: 1025px) {
+    .first,
+    .last {
+      width: 80%;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
